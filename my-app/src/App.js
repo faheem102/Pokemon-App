@@ -1,11 +1,13 @@
 
 import './App.css';
+import Main from './Components/Main';
+
 
 function App() {
   return (
     <>
-    <h1> Pokeman
-      </h1></>
+   <Main />
+   </>
   );
 }
 

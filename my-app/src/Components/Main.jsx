@@ -1,5 +1,7 @@
 import React from "react";
-import "./Main.css"
+import "./Main.css";
+import FetchPokemons from "./FetchPokemon"
+
 
 const Main = () => {
     return (
@@ -7,7 +9,7 @@ const Main = () => {
             <div className="container">
                 <div className="left-content">
                     <p className="heading">Choose Your Pkemon</p>
-
+                    <FetchPokemons />
                 </div>
                 <div className="right-content">
                     <p>Pokemon Card</p>

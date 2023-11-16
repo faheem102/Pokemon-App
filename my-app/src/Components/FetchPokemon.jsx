@@ -1,6 +1,7 @@
 
 import React, { useState, useEffect } from "react";
-import "./FetchPokemon.css"
+import "./FetchPokemon.css";
+import logo from "../Images/pokemon.png"
 
 const FetchPokemons = () => {
     const [pokemons, setPokemons] = useState([]);
@@ -10,6 +11,7 @@ const FetchPokemons = () => {
             const response = await fetch(URL);
             const data = await response.json();
             setPokemons(data.results);
+            console.log(data)
         };
 
         fetchData();
@@ -19,7 +21,11 @@ const FetchPokemons = () => {
         <div >
             <ul>
                 {pokemons.map(({ name, url }) => (
-                    <li className="pokemon-list" key={url}>{name}</li>
+                    <div className="pokemon-list">
+                        <li className="list"  key={url}>{name}</li>
+                        <img className="pokemon-image" alt="pokemon" src={logo}></img>
+                    </div>
+
                 ))}
             </ul>
         </div>

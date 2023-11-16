@@ -8,7 +8,7 @@ const Main = () => {
         <>
             <div className="container">
                 <div className="left-content">
-                    <p className="heading">Choose Your Pkemon</p>
+                    <p className="heading">Choose Your Pokemon</p>
                     <FetchPokemons />
                 </div>
                 <div className="right-content">

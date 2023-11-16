@@ -1,9 +1,11 @@
 import React from 'react';
 import './App.css';
-
+import { SearchPokemon } from './components/SearchPokemon';
 function App(){
   return (
-    <div></div>
+    <div>
+      <SearchPokemon/>
+    </div>
   )
 }
 
